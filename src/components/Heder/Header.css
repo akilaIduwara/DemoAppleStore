@@ -1,0 +1,25 @@
+.header {
+  display: flex;
+  gap: 20px; /* <-- this adds space between the items */
+  color: white;
+  padding: 16px;
+  justify-content: center; /* or space-between, flex-start, etc. */
+}
+
+.img-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: nowrap;       /* to keep it in one row */
+  overflow-x: auto;         /* allows scrolling if too wide */
+  background-color: white;
+  padding: 100px;
+}
+
+.img-container img {
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+}
